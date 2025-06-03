@@ -139,8 +139,8 @@ main {
 .pricing-section {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: nowrap;
 }
 
 .pricing-plan {
@@ -148,13 +148,16 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   padding: 40px 30px;
-  flex: 1 1 320px;
-  max-width: 400px;
+  flex: 1;
+  max-width: 350px;
   box-shadow: var(--card-shadow);
   transition: all 0.4s ease;
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-plan::before {
@@ -177,11 +180,27 @@ main {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.pricing-plan h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+.plan-image {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured .plan-image {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.pricing-plan h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .pricing-plan .price {
@@ -191,37 +210,7 @@ main {
   font-weight: 700;
 }
 
-.pricing-plan ul {
-  list-style: none;
-  text-align: left;
-  margin-bottom: 30px;
-  padding: 0;
-}
 
-.pricing-plan ul li {
-  margin-bottom: 15px;
-  padding-left: 30px;
-  position: relative;
-  font-size: 1.1rem;
-  color: var(--text-light);
-}
-
-.pricing-plan ul li::before {
-  content: '✓';
-  color: var(--accent-color);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  font-size: 1.2rem;
-  background: rgba(245, 158, 11, 0.1);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-}
 
 .select-plan {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -299,11 +288,12 @@ footer {
   .pricing-section {
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
 
   .featured {
     transform: none;
-    margin: 20px 0;
+    margin: 0;
   }
 
   .lang-switch {
@@ -336,6 +326,16 @@ footer {
 
   .pricing-plan {
     max-width: 100%;
+    width: 100%;
+  }
+
+  .plan-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pricing-plan h1 {
+    font-size: 1.8rem;
   }
 }
 
