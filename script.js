@@ -203,6 +203,7 @@ function pay(description, amountInCents) {
     wayforpay.run({
         merchantAccount: "annasapota_com",
         merchantDomainName: "annasapota.com",
+        authorisationType: "SimpleSignature",
         orderReference: "BFM-" + Math.floor(Math.random() * 100000),
         orderDate: Math.floor(Date.now() / 1000),
         amount: amountInCents / 100,
