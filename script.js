@@ -19,6 +19,10 @@ const translations = {
         copyCode: "Select and Pay",
         alreadyUsing: "Already Using Moosend?",
         loginLink: "Login To Your Moosend Account",
+        legalInfo: "Legal Information:",
+        terms: "Terms & Conditions",
+        refund: "Refund Policy",
+        contact: "Contact Information",
         // Legal pages translations
         backToMain: "← Back to Main Page",
         termsTitle: "Terms and Conditions",
@@ -61,6 +65,10 @@ const translations = {
         copyCode: "Выбрать и Оплатить",
         alreadyUsing: "Уже используете Moosend?",
         loginLink: "Войти в Ваш Аккаунт Moosend",
+        legalInfo: "Юридическая информация:",
+        terms: "Условия и положения",
+        refund: "Политика возврата",
+        contact: "Контактная информация",
         // Legal pages translations
         backToMain: "← Вернуться на Главную Страницу",
         termsTitle: "Условия и Положения",
@@ -103,6 +111,10 @@ const translations = {
         copyCode: "Обрати та Оплатити",
         alreadyUsing: "Вже використовуєте Moosend?",
         loginLink: "Увійти до Вашого Облікового Запису Moosend",
+        legalInfo: "Юридична інформація:",
+        terms: "Умови та положення",
+        refund: "Політика повернення",
+        contact: "Контактна інформація",
         // Legal pages translations
         backToMain: "← Повернутися на Головну Сторінку",
         termsTitle: "Умови та Положення",
