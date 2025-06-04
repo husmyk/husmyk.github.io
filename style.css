@@ -1,370 +1,230 @@
 
-:root {
-  --primary-color: #2563eb;
-  --primary-dark: #1d4ed8;
-  --accent-color: #f59e0b;
-  --accent-light: #fbbf24;
-  --text-color: #1f2937;
-  --text-light: #6b7280;
-  --bg-color: #ffffff;
-  --featured-bg: #eff6ff;
-  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--gradient-bg);
-  color: var(--text-color);
-  min-height: 100vh;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0f0f11;
+    color: white;
+    text-align: center;
 }
 
 header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 60px 20px 40px;
-  text-align: center;
-  position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-}
-
-header h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--text-color);
-  margin-bottom: 10px;
-  letter-spacing: -0.02em;
-}
-
-header p {
-  font-size: 1.4rem;
-  color: var(--text-light);
-  margin-top: 15px;
-  font-weight: 400;
-}
-
-.lang-switch {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  display: flex;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 8px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.lang-switch button {
-  padding: 8px 16px;
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  cursor: pointer;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.lang-switch button:hover {
-  background: var(--primary-color);
-  color: white;
-  transform: translateY(-1px);
-}
-
-main {
-  max-width: 1200px;
-  margin: -20px auto 0;
-  padding: 60px 20px;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  border-radius: 24px;
-  box-shadow: var(--card-shadow);
-  position: relative;
-}
-
-.about {
-  margin-bottom: 60px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  font-weight: 700;
-  position: relative;
-}
-
-.about h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
-.about p {
-  font-size: 1.2rem;
-  color: var(--text-light);
-  line-height: 1.8;
-  margin-top: 30px;
-}
-
-.pricing-section {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: nowrap;
-}
-
-.pricing-plan {
-  background: var(--bg-color);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
-  padding: 40px 30px;
-  flex: 1;
-  max-width: 350px;
-  box-shadow: var(--card-shadow);
-  transition: all 0.4s ease;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pricing-plan::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: left 0.6s ease;
-}
-
-.pricing-plan:hover::before {
-  left: 100%;
-}
-
-.pricing-plan:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.plan-image {
-  margin-bottom: 20px;
-  padding: 20px;
-  background: rgba(37, 99, 235, 0.1);
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.featured .plan-image {
-  background: rgba(245, 158, 11, 0.1);
-}
-
-.pricing-plan h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: var(--text-color);
-  font-weight: 700;
-}
-
-.pricing-plan .price {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-
-
-.select-plan {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-  color: white;
-  border: none;
-  padding: 16px 32px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.select-plan::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.select-plan:hover::before {
-  left: 100%;
-}
-
-.select-plan:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
-}
-
-.featured {
-  background: var(--featured-bg);
-  border: 2px solid var(--primary-color);
-  transform: scale(1.05);
-  position: relative;
-}
-
-.featured::after {
-  content: 'Most Popular';
-  position: absolute;
-  top: -1px;
-  right: 20px;
-  background: var(--accent-color);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 0 0 12px 12px;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.featured .select-plan {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-}
-
-.featured .select-plan:hover {
-  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
-}
-
-footer {
-  text-align: center;
-  font-size: 1rem;
-  padding: 40px 20px;
-  background: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .pricing-section {
-    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-  }
-
-  .featured {
-    transform: none;
-    margin: 0;
-  }
-
-  .lang-switch {
-    position: static;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  main {
-    padding: 40px 20px;
-    margin-top: 0;
-    border-radius: 20px 20px 0 0;
-  }
-
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  header p {
-    font-size: 1.2rem;
-  }
-
-  .about h2 {
-    font-size: 2rem;
-  }
-
-  .about p {
-    font-size: 1.1rem;
-  }
-
-  .pricing-plan {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .plan-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .pricing-plan h1 {
-    font-size: 1.8rem;
-  }
 }
 
-@media (max-width: 480px) {
-  header {
-    padding: 40px 15px 30px;
+header img {
+    max-height: 50px;
+}
+
+.language-selector select {
+    background: #1a1a1d;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.language-selector select:hover {
+    border-color: #0ff;
+}
+
+.language-selector select option {
+    background: #1a1a1d;
+    color: white;
+}
+
+.hero { background-image: src="/assets/IMG_20250603_180501_414.jpg;
   }
 
-  header h1 {
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 15px #0ff;
+    margin: 20px 0;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    background: #1a1a1d;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    min-width: 80px;
+}
+
+.countdown span {
+    display: block;
     font-size: 2rem;
-  }
+    font-weight: 600;
+    color: #0ff;
+}
 
-  header p {
-    font-size: 1.1rem;
-  }
+.countdown label {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-transform: uppercase;
+}
 
-  main {
-    padding: 30px 15px;
-  }
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .about h2 {
-    font-size: 1.8rem;
-  }
-
-  .pricing-plan {
+.plan {
+    background: #1a1a1d;
+    border: 2px solid #333;
+    border-radius: 15px;
     padding: 30px 20px;
-  }
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
 
-  .pricing-plan .price {
-    font-size: 2rem;
-  }
+.plan:hover {
+    transform: translateY(-5px);
+    border-color: #ffc107;
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffc107;
+}
+
+.plan p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.plan strong {
+    color: #0ff;
+    background: #1a1a1d;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.plan select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta {
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #ffc107, #ff9800);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    background: linear-gradient(45deg, #ff9800, #ffc107);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: #1a1a1d;
+}
+
+.footer p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #0ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .countdown {
+        gap: 15px;
+    }
+    
+    .countdown div {
+        padding: 10px 15px;
+        min-width: 60px;
+    }
+    
+    .countdown span {
+        font-size: 1.5rem;
+    }
+    
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
