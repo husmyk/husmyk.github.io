@@ -7,8 +7,14 @@ body {
     text-align: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,10 +110,8 @@ header img {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 40px 0;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .plan {
@@ -193,7 +197,7 @@ header img {
 
 .social-section {
     background: #0f0f11;
-    padding: 40px 20px;
+    padding: 40px 0;
     margin-top: 40px;
     border-top: 1px solid #333;
 }
@@ -323,7 +327,7 @@ header img {
 
 .footer {
     margin-top: 60px;
-    padding: 40px 20px;
+    padding: 40px 0;
     background: #1a1a1d;
 }
 
@@ -344,66 +348,87 @@ header img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .hero {
         background-size: cover;
         background-position: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 20px 15px;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
         max-width: 100%;
     }
-    
+
     .hero p {
         max-width: 100%;
+        font-size: 1rem;
     }
-    
+
     .countdown {
         gap: 15px;
+        margin: 20px 15px;
     }
-    
+
     .countdown div {
         padding: 10px 15px;
         min-width: 60px;
     }
-    
+
     .countdown span {
         font-size: 1.5rem;
     }
-    
+
     .plans {
         flex-direction: column;
         align-items: center;
+        padding: 40px 15px;
     }
-    
+
     .plan {
         max-width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .social-links {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-    
+
     .social-section h2 {
         font-size: 1.5rem;
     }
-    
+
+    .mind-map-section {
+        margin: 0 15px 40px 15px;
+    }
+
     .mind-map-section h3 {
         font-size: 1.2rem;
     }
-    
+
     .questions-section {
         flex-direction: column;
         text-align: center;
+        margin: 0 15px;
     }
-    
+
     .questions-text h3 {
         font-size: 1.1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header img {
+        max-height: 40px;
     }
 }

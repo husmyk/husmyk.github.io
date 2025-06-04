@@ -52,7 +52,8 @@ const translations = {
         visitSite: "Перейти на сайт",
         questionsLeft: "ЗАЛИШИСЬ ПИТАННЯ?",
         askDirect: "ЗАДАЙТЕ ЇХ МЕНІ ОСОБИСТО В DIRECT",
-        writeInDirect: "Написати в Direct"
+        writeInDirect: "Написати в Direct",
+        payNow: "Оплатити Зараз"
     },
     ru: {
         title: "Анна Сапота",
@@ -107,7 +108,8 @@ const translations = {
         visitSite: "Перейти на сайт",
         questionsLeft: "ОСТАЛИСЬ ВОПРОСЫ?",
         askDirect: "ЗАДАЙТЕ ИХ МНЕ ЛИЧНО В DIRECT",
-        writeInDirect: "Написать в Direct"
+        writeInDirect: "Написать в Direct",
+        payNow: "Оплатить Сейчас"
     }
 };
 
