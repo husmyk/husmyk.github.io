@@ -201,12 +201,12 @@ const countdown = () => {
 function pay(description, amountInCents) {
     const wayforpay = new Wayforpay();
     wayforpay.run({
-        merchantAccount: "test_merch_n1",
-        merchantDomainName: "yourdomain.com",
+        merchantAccount: "annasapota_com",
+        merchantDomainName: "annasapota.com",
         orderReference: "BFM-" + Math.floor(Math.random() * 100000),
         orderDate: Math.floor(Date.now() / 1000),
         amount: amountInCents / 100,
-        currency: "USD",
+        currency: "EUR",
         productName: [description],
         productPrice: [amountInCents / 100],
         productCount: [1],
