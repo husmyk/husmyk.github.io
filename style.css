@@ -5,12 +5,13 @@ body {
     background: #0f0f11;
     color: white;
     text-align: center;
+    padding: 0 120px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0;
 }
 
 header {
@@ -55,7 +56,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 40px 60px;
+    padding: 40px 0;
     text-align: right;
 }
 
@@ -81,7 +82,7 @@ header img {
     justify-content: center;
     gap: 30px;
     font-size: 1.2rem;
-    margin: 20px 60px;
+    margin: 20px 0;
     flex-wrap: wrap;
 }
 
@@ -110,7 +111,7 @@ header img {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 40px 60px;
+    padding: 40px 0;
     flex-wrap: wrap;
 }
 
@@ -197,7 +198,7 @@ header img {
 
 .social-section {
     background: #0f0f11;
-    padding: 40px 60px;
+    padding: 40px 0;
     margin-top: 40px;
     border-top: 1px solid #333;
 }
@@ -349,7 +350,7 @@ header img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    body {
         padding: 0 20px;
     }
 
@@ -358,7 +359,7 @@ header img {
         background-position: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .hero h1 {
@@ -388,7 +389,7 @@ header img {
     .plans {
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 
     .plan {
@@ -403,7 +404,7 @@ header img {
     }
 
     .social-section {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 
     .social-section h2 {
