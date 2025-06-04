@@ -108,11 +108,11 @@ header img {
 }
 
 .plans {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 40px 0;
-    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .plan {
@@ -120,11 +120,9 @@ header img {
     border: 2px solid #333;
     border-radius: 15px;
     padding: 30px 20px;
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
     text-align: center;
     transition: transform 0.3s ease, border-color 0.3s ease;
+    width: 100%;
 }
 
 .plan:hover {
@@ -436,15 +434,15 @@ header img {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-right {
         text-align: center;
     }
-    
+
     .payment-systems {
         justify-content: center;
     }
-    
+
     .contact-info {
         text-align: center;
     }
@@ -489,13 +487,11 @@ header img {
     }
 
     .plans {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
         padding: 40px 0;
     }
 
     .plan {
-        max-width: 100%;
         margin-bottom: 20px;
     }
 

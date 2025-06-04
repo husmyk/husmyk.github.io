@@ -19,9 +19,9 @@ const translations = {
         alreadyUsing: "Вже використовуєте Moosend?",
         loginLink: "Увійти в Ваш Аккаунт Moosend",
         legalInfo: "Юридична інформація:",
-        terms: "Умови та положення",
-        refund: "Політика повернення",
-        contact: "Контактна інформація",
+        terms: "Умови оказання послуг",
+        refund: "Відмова від відповідальності",
+        contact: "Гарантія повернення",
         backToMain: "← Повернутися на Головну Сторінку",
         termsTitle: "Умови та Положення",
         refundTitle: "Політика Повернення Коштів",
@@ -53,7 +53,11 @@ const translations = {
         questionsLeft: "ЗАЛИШИСЬ ПИТАННЯ?",
         askDirect: "ЗАДАЙТЕ ЇХ МЕНІ ОСОБИСТО В DIRECT",
         writeInDirect: "Написати в Direct",
-        payNow: "Оплатити Зараз"
+        payNow: "Оплатити Зараз",
+        callBack: "Зворотний дзвінок",
+        privacyPolicy: "Політика конфіденційності",
+        paymentSystems: "Платіжні системи",
+        fopInfo: "ФОП Сапота А.В. ІПН"
     },
     ru: {
         title: "Анна Сапота",
@@ -75,9 +79,9 @@ const translations = {
         alreadyUsing: "Уже используете Moosend?",
         loginLink: "Войти в Ваш Аккаунт Moosend",
         legalInfo: "Юридическая информация:",
-        terms: "Условия и положения",
-        refund: "Политика возврата",
-        contact: "Контактная информация",
+        terms: "Условия оказания услуг",
+        refund: "Отказ от ответственности",
+        contact: "Гарантия возврата",
         backToMain: "← Вернуться на Главную Страницу",
         termsTitle: "Условия и Положения",
         refundTitle: "Политика Возврата",
@@ -109,7 +113,11 @@ const translations = {
         questionsLeft: "ОСТАЛИСЬ ВОПРОСЫ?",
         askDirect: "ЗАДАЙТЕ ИХ МНЕ ЛИЧНО В DIRECT",
         writeInDirect: "Написать в Direct",
-        payNow: "Оплатить Сейчас"
+        payNow: "Оплатить Сейчас",
+        callBack: "Обратный звонок",
+        privacyPolicy: "Политика конфиденциальности",
+        paymentSystems: "Платёжные системы",
+        fopInfo: "ФОП Сапота А.В. ИНН"
     }
 };
 
