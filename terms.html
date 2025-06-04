@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Anna Sapota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .legal-content h2 {
+            color: #0ff;
+            margin: 30px 0 15px 0;
+        }
+        .legal-content h3 {
+            color: #ffc107;
+            margin: 20px 0 10px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="uk">🇺🇦 Українська</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="ru">🇷🇺 Русский</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Back to Main Page</a>
+        
+        <h1 data-i18n="termsTitle">Terms and Conditions</h1>
+        
+        <h2>1. <span data-i18n="serviceDesc">Service Description</span></h2>
+        <p>Anna Sapota provides email marketing services through various subscription plans. Our services include email campaign management, contact list management, and marketing automation tools.</p>
+        
+        <h2>2. <span data-i18n="paymentTerms">Payment Terms</span></h2>
+        <h3>Available Payment Methods:</h3>
+        <ul>
+            <li>Credit/Debit Cards (Visa, MasterCard)</li>
+            <li>PayPal</li>
+            <li>Bank Transfer</li>
+            <li>WayForPay</li>
+        </ul>
+        
+        <h3>Billing Cycles:</h3>
+        <ul>
+            <li>Monthly: Billed every 30 days</li>
+            <li>Biannual: Billed every 6 months</li>
+            <li>Annual: Billed every 12 months</li>
+        </ul>
+        
+        <h2>3. <span data-i18n="serviceDelivery">Service Delivery</span></h2>
+        <p>Services are delivered digitally and are available immediately upon successful payment confirmation. Access credentials will be provided via email within 24 hours of payment.</p>
+        
+        <h2>4. Service Terms</h2>
+        <ul>
+            <li>All subscriptions are automatically renewed unless cancelled</li>
+            <li>Service levels are based on contact list size</li>
+            <li>Usage limits apply based on selected plan</li>
+            <li>Fair use policy applies to all services</li>
+        </ul>
+        
+        <h2>5. <span data-i18n="userResponsibilities">User Responsibilities</span></h2>
+        <ul>
+            <li>Maintain accurate account information</li>
+            <li>Comply with anti-spam regulations</li>
+            <li>Use services only for legitimate business purposes</li>
+            <li>Protect login credentials</li>
+        </ul>
+        
+        <h2>6. <span data-i18n="limitationLiability">Limitation of Liability</span></h2>
+        <p>Our liability is limited to the amount paid for services. We are not responsible for indirect, consequential, or punitive damages.</p>
+        
+        <h2>7. <span data-i18n="governingLaw">Governing Law</span></h2>
+        <p>These terms are governed by Ukrainian law. Any disputes will be resolved in Ukrainian courts.</p>
+        
+        <p><strong>Last Updated:</strong> November 2024</p>
+    </div>
+
+    <div class="footer">
+        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="margin-bottom: 15px;">Legal Information:</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
+                <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
+                <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
