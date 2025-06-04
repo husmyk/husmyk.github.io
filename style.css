@@ -42,8 +42,6 @@ header img {
 .hero { background-image: url('/assets/IMG_20250603_180501_414.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    text-indent: -9999px;
   }
 
 .hero h1 {
