@@ -64,6 +64,7 @@ header img {
     font-size: 7rem;
     font-weight: 700;
     color: #fff;
+    text-shadow: 0 0 15px #0ff;
     margin: 20px 0;
     max-width: 50%;
 }
@@ -329,7 +330,6 @@ header img {
 .footer {
     margin-top: 60px;
     padding: 40px 0;
-    background: #1a1a1d;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -340,6 +340,7 @@ header img {
 .footer-left {
     flex: 1;
     min-width: 300px;
+    text-align: left;
 }
 
 .footer-right {
