@@ -49,14 +49,14 @@
         <h3 data-i18n="monthly">Консультація</h3>
         <p><span data-i18n="monthlyDesc">Разова консультація на пропрацювання особистості</span> </p>
         <div class="price">€12</div>
-        <button onclick="pay('Monthly Plan', 1200)" class="cta" data-i18n="copyCode">Обрати та Оплатити</button>
+        <a href="https://secure.wayforpay.com/button/bacf2df37a086" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;text-decoration:none!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Сплатити</span></a>
       </div>
   
       <div class="plan">
         <h3 data-i18n="biannual">Підписка</h3>
         <p><span data-i18n="biannualDesc">Місячна підписка на мої послуги</span> </p>
-        <div class="price">€42</div>
-        <button onclick="pay('Biannual Plan', 4200)" class="cta" data-i18n="copyCode">Обрати та Оплатити</button>
+        <div class="price">€100</div>
+        <a href="https://secure.wayforpay.com/button/bacf2df37a086" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;text-decoration:none!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Сплатити</span></a>  
       </div>
   
     </section>
@@ -120,7 +120,10 @@
   </div>
   
     <script src="script.js"></script>
-    <script src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+    <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script> <script type="text/javascript">function runWfpWdgt(url){var wayforpay=new Wayforpay();wayforpay.invoice(url);}</script> <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/bacf2df37a086');" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Сплатити</span></button>
+    <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script> <script type="text/javascript">function runWfpWdgt(url){var wayforpay=new Wayforpay();wayforpay.invoice(url);}</script> <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/bacf2df37a086');" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Сплатити</span></button>
+
+Код віджету
   </body>
   
   </html>
