@@ -39,10 +39,19 @@ header img {
     color: white;
 }
 
-.hero { background-image: url('/assets/IMG_20250603_180501_414.jpg');
+.hero {
+    background-image: url('/assets/IMG_20250603_180501_414.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-  }
+    background-size: contain;
+    background-position: left center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px;
+    text-align: right;
+}
 
 .hero h1 {
     font-size: 7rem;
@@ -50,6 +59,7 @@ header img {
     color: #fff;
     text-shadow: 0 0 15px #0ff;
     margin: 20px 0;
+    max-width: 50%;
 }
 
 .hero p {
@@ -57,6 +67,7 @@ header img {
     font-size: 1.2rem;
     margin-top: -10px;
     margin-bottom: 30px;
+    max-width: 50%;
 }
 
 .countdown {
@@ -333,8 +344,21 @@ header img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
     .hero h1 {
         font-size: 2rem;
+        max-width: 100%;
+    }
+    
+    .hero p {
+        max-width: 100%;
     }
     
     .countdown {
