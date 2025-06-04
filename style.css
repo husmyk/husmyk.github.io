@@ -39,7 +39,7 @@ header img {
     color: white;
 }
 
-.hero { background-image: src="/assets/IMG_20250603_180501_414.jpg";
+.hero { background-image: url('/assets/IMG_20250603_180501_414.jpg');
   }
 
 .hero h1 {
