@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindMaster Coaching</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Anna Sapota</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <div class="lang-switch">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('ru')">RU</button>
-      <button onclick="setLanguage('ua')">UA</button>
+    <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+    <div class="language-selector">
+      <select id="languageSelect" onchange="changeLanguage(this.value)">
+        <option value="uk">🇺🇦 Українська</option>
+        <option value="en">🇺🇸 English</option>
+        <option value="ru">🇷🇺 Русский</option>
+      </select>
     </div>
-    <h1 data-i18n="title">MindMaster Coaching</h1>
-    <p data-i18n="subtitle">Coaching and psychological support for growth</p>
   </header>
 
-  <main>
-    <section class="about">
-      <h2 data-i18n="about_title">About Me</h2>
-      <p data-i18n="about_text">
-        I am a certified coach helping individuals overcome mental barriers, improve productivity, and build meaningful lives through one-on-one sessions and guided coaching programs.
-      </p>
-    </section>
+  <section class="hero">
+    <h1 data-i18n="title">Anna Sapota</h1>
+    <p data-i18n="subtitle">More than 10 years I'm making the life of mankind better. Don't miss out the chance to
+      overcome your weak mind and become the grandmaster of your mind.</p>
+  </section>
 
-    <section class="pricing-section">
-      <div class="pricing-plan">
-        <div class="plan-image">
-          <img src="assets/IMG_20250603_191453_462.jpg" alt="Standard Plan Icon" width="auto" height="auto">
-        </div>
-        <h1 data-i18n="standard">Standard</h1>
-        <p class="price">₴500</p>
-        <button class="select-plan" data-plan="standard" data-i18n="select">Select</button>
+  <section class="countdown" id="countdown">
+    <div>
+      <span id="days">00</span>
+      <label data-i18n="days">Days</label>
+    </div>
+    <div>
+      <span id="hours">00</span>
+      <label data-i18n="hours">Hours</label>
+    </div>
+    <div>
+      <span id="minutes">00</span>
+      <label data-i18n="minutes">Minutes</label>
+    </div>
+    <div>
+      <span id="seconds">00</span>
+      <label data-i18n="seconds">Seconds</label>
+    </div>
+  </section>
+
+  <section class="plans">
+    <div class="plan">
+      <h3 data-i18n="monthly">Monthly</h3>
+      <p><span data-i18n="monthlyDesc">10% off monthly plan for a year</span> <strong>BFM000</strong></p>
+      <div class="old-price">$9</div>
+      <div class="price">$8</div>
+      <select>
+        <option data-i18n="contacts0">0 – 500 contacts</option>
+        <option data-i18n="contacts1">501 – 1,000 contacts</option>
+        <option data-i18n="contacts2">1,001 – 2,500 contacts</option>
+      </select>
+      <button onclick="pay('Monthly Plan', 800)" class="cta" data-i18n="copyCode">Copy Code & Start Free</button>
+    </div>
+
+    <div class="plan">
+      <h3 data-i18n="biannual">Biannual</h3>
+      <p><span data-i18n="biannualDesc">25% off biannual plan for a year</span> <strong>BFM0025</strong></p>
+      <div class="old-price">$54</div>
+      <div class="price">$42</div>
+      <select>
+        <option data-i18n="contacts0">0 – 500 contacts</option>
+        <option data-i18n="contacts1">501 – 1,000 contacts</option>
+        <option data-i18n="contacts2">1,001 – 2,500 contacts</option>
+      </select>
+      <button onclick="pay('Biannual Plan', 4200)" class="cta" data-i18n="copyCode">Copy Code & Start Free</button>
+    </div>
+
+  </section>
+
+  <div class="footer">
+
+    <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+      <p style="margin-bottom: 15px;">Legal Information:</p>
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
+        <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
+        <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
       </div>
-      <div class="pricing-plan featured">
-        <div class="plan-image">
-          <img src="assets/IMG_20250603_180501_414.jpg" alt="Premium Plan Icon" width="auto" height="auto">
-        </div>
-        <h1 data-i18n="premium">Premium</h1>
-        <p class="price">₴1200</p>
-        <button class="select-plan" data-plan="premium" data-i18n="select">Select</button>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <footer>
-    &copy; 2025 MindMaster Coaching
-  </footer>
-
-  <script src="https://secure.wayforpay.com/server/pay-widget.js"></script>
   <script src="script.js"></script>
+  <script src="https://secure.wayforpay.com/server/pay-widget.js"></script>
 </body>
+
 </html>
