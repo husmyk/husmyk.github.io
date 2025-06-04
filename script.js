@@ -182,7 +182,7 @@ const countdown = () => {
         return;
     }
 
-    const endDate = new Date("November 29, 2025 23:59:59").getTime();
+    const endDate = new Date("June 10, 2025 23:59:59").getTime();
     const now = new Date().getTime();
     const diff = endDate - now;
 
