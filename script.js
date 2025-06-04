@@ -1,50 +1,58 @@
-// Simple i18n implementation
 const translations = {
-    en: {
-        title: "Anna Sapota",
-        subtitle: "More than 10 years I manage the life and wellness of the mankind to become better versions of themselves everyday. Don't miss your chance to become a better version of yourself!",
-        days: "Days",
-        hours: "Hours",
-        minutes: "Minutes",
-        seconds: "Seconds",
-        monthly: "Couch-Session",
-        biannual: "Subscription",
-        annual: "Annual",
-        monthlyDesc: "1 - 1,5 hours session",
-        biannualDesc: "Monthly subscription for my products",
-        annualDesc: "35% off annual plan for a year",
-        contacts0: "0 – 500 contacts",
-        contacts1: "501 – 1,000 contacts",
-        contacts2: "1,001 – 2,500 contacts",
-        copyCode: "Select and Pay",
-        alreadyUsing: "Already Using Moosend?",
-        loginLink: "Login To Your Moosend Account",
-        legalInfo: "Legal Information:",
-        terms: "Terms & Conditions",
-        refund: "Refund Policy",
-        contact: "Contact Information",
-        // Legal pages translations
-        backToMain: "← Back to Main Page",
-        termsTitle: "Terms and Conditions",
-        refundTitle: "Refund Policy",
-        contactTitle: "Contact Information",
-        serviceDesc: "Service Description",
-        paymentTerms: "Payment Terms",
-        serviceDelivery: "Service Delivery",
-        userResponsibilities: "User Responsibilities",
-        limitationLiability: "Limitation of Liability",
-        governingLaw: "Governing Law",
-        refundEligibility: "Refund Eligibility",
-        nonRefundable: "Non-Refundable Situations",
-        refundProcess: "Refund Process",
-        processingTime: "Processing Time",
-        partialRefunds: "Partial Refunds",
-        chargebackPolicy: "Chargeback Policy",
-        companyDetails: "Company Details",
-        contactDetails: "Contact Details",
-        businessHours: "Business Hours",
-        bankingInfo: "Banking Information",
-        additionalInfo: "Additional Information"
+    uk: {
+        title: "Анна Сапота",
+        subtitle: "Більше 10 років я керую життям та благополуччям людства, щоб воно кожен день ставало кращим. Не пропустіть свій шанс стати кращою версією себе!",
+        days: "Дні",
+        hours: "Години",
+        minutes: "Хвилини",
+        seconds: "Секунди",
+        monthly: "Консультація",
+        biannual: "Підписка",
+        annual: "Річний",
+        monthlyDesc: "Разова консультація на пропрацювання особистості",
+        biannualDesc: "Місячна підписка на мої послуги",
+        annualDesc: "35% знижка на річний план протягом року",
+        contacts0: "0 – 500 контактів",
+        contacts1: "501 – 1,000 контактів",
+        contacts2: "1,001 – 2,500 контактів",
+        copyCode: "Обрати та Оплатити",
+        alreadyUsing: "Вже використовуєте Moosend?",
+        loginLink: "Увійти в Ваш Аккаунт Moosend",
+        legalInfo: "Юридична інформація:",
+        terms: "Умови та положення",
+        refund: "Політика повернення",
+        contact: "Контактна інформація",
+        backToMain: "← Повернутися на Головну Сторінку",
+        termsTitle: "Умови та Положення",
+        refundTitle: "Політика Повернення Коштів",
+        contactTitle: "Контактна Інформація",
+        serviceDesc: "Опис Послуги",
+        paymentTerms: "Умови Оплати",
+        serviceDelivery: "Надання Послуги",
+        userResponsibilities: "Обов'язки Користувача",
+        limitationLiability: "Обмеження Відповідальності",
+        governingLaw: "Застосовне Право",
+        refundEligibility: "Право на Повернення",
+        nonRefundable: "Невідшкодовувані Ситуації",
+        refundProcess: "Процес Повернення",
+        processingTime: "Час Обробки",
+        partialRefunds: "Часткові Повернення",
+        chargebackPolicy: "Політика Оспорювання",
+        companyDetails: "Деталі Компанії",
+        contactDetails: "Контактні Деталі",
+        businessHours: "Робочі Години",
+        bankingInfo: "Банківська Інформація",
+        additionalInfo: "Додаткова Інформація",
+        socialNetworks: "МОЇ СОЦІАЛЬНІ МЕРЕЖІ",
+        instagram: "INSTAGRAM",
+        telegram: "TELEGRAM-КАНАЛ",
+        tiktok: "TIKTOK",
+        youtube: "YOUTUBE",
+        mindMapTitle: "ПЕРЕХОДИ НА MIND MAP ВСІХ МОЇХ ПРОДУКТІВ",
+        visitSite: "Перейти на сайт",
+        questionsLeft: "ЗАЛИШИСЬ ПИТАННЯ?",
+        askDirect: "ЗАДАЙТЕ ЇХ МЕНІ ОСОБИСТО В DIRECT",
+        writeInDirect: "Написати в Direct"
     },
     ru: {
         title: "Анна Сапота",
@@ -69,7 +77,6 @@ const translations = {
         terms: "Условия и положения",
         refund: "Политика возврата",
         contact: "Контактная информация",
-        // Legal pages translations
         backToMain: "← Вернуться на Главную Страницу",
         termsTitle: "Условия и Положения",
         refundTitle: "Политика Возврата",
@@ -85,159 +92,117 @@ const translations = {
         refundProcess: "Процесс Возврата",
         processingTime: "Время Обработки",
         partialRefunds: "Частичные Возвраты",
-        chargebackPolicy: "Политика Оспаривания",
+        chargebackPolicy: "Политика Оспоривания",
         companyDetails: "Детали Компании",
         contactDetails: "Контактные Детали",
         businessHours: "Рабочие Часы",
         bankingInfo: "Банковская Информация",
-        additionalInfo: "Дополнительная Информация"
-    },
-    uk: {
-        title: "Анна Сапота",
-        subtitle: "Більше 10 років я керую життям та благополуччям людства, щоб воно кожен день ставало кращим. Не пропустіть свій шанс стати кращою версією себе!",
-        days: "Дні",
-        hours: "Години",
-        minutes: "Хвилини",
-        seconds: "Секунди",
-        monthly: "Консультація",
-        biannual: "Підписка",
-        annual: "Річний",
-        monthlyDesc: "Разова консультація на пропрацювання особистості",
-        biannualDesc: "Місячна підписка на мої послуги",
-        annualDesc: "35% знижка на річний план протягом року",
-        contacts0: "0 – 500 контактів",
-        contacts1: "501 – 1,000 контактів",
-        contacts2: "1,001 – 2,500 контактів",
-        copyCode: "Обрати та Оплатити",
-        alreadyUsing: "Вже використовуєте Moosend?",
-        loginLink: "Увійти до Вашого Облікового Запису Moosend",
-        legalInfo: "Юридична інформація:",
-        terms: "Умови та положення",
-        refund: "Політика повернення",
-        contact: "Контактна інформація",
-        // Legal pages translations
-        backToMain: "← Повернутися на Головну Сторінку",
-        termsTitle: "Умови та Положення",
-        refundTitle: "Політика Повернення Коштів",
-        contactTitle: "Контактна Інформація",
-        serviceDesc: "Опис Послуги",
-        paymentTerms: "Умови Оплати",
-        serviceDelivery: "Надання Послуги",
-        userResponsibilities: "Обов'язки Користувача",
-        limitationLiability: "Обмеження Відповідальності",
-        governingLaw: "Застосовне Право",
-        refundEligibility: "Право на Повернення Коштів",
-        nonRefundable: "Неповертні Ситуації",
-        refundProcess: "Процес Повернення Коштів",
-        processingTime: "Час Обробки",
-        partialRefunds: "Часткові Повернення",
-        chargebackPolicy: "Політика Оспорювання",
-        companyDetails: "Деталі Компанії",
-        contactDetails: "Контактні Деталі",
-        businessHours: "Робочі Години",
-        bankingInfo: "Банківська Інформація",
-        additionalInfo: "Додаткова Інформація"
+        additionalInfo: "Дополнительная Информация",
+        socialNetworks: "МОИ СОЦИАЛЬНЫЕ СЕТИ",
+        instagram: "INSTAGRAM",
+        telegram: "TELEGRAM-КАНАЛ",
+        tiktok: "TIKTOK",
+        youtube: "YOUTUBE",
+        mindMapTitle: "ПЕРЕХОДИ НА MIND MAP ВСЕХ МОИХ ПРОДУКТОВ",
+        visitSite: "Перейти на сайт",
+        questionsLeft: "ОСТАЛИСЬ ВОПРОСЫ?",
+        askDirect: "ЗАДАЙТЕ ИХ МНЕ ЛИЧНО В DIRECT",
+        writeInDirect: "Написать в Direct"
     }
 };
 
+// Set default language to Ukrainian
 let currentLanguage = 'uk';
 
-// Initialize i18n
-function initI18n() {
-    const savedLang = localStorage.getItem('selectedLanguage') || 'uk';
-    changeLanguage(savedLang);
-}
-
-// Change language function
+// Function to translate the page
 function changeLanguage(lang) {
     currentLanguage = lang;
-    localStorage.setItem('selectedLanguage', lang);
+    const elements = document.querySelectorAll('[data-i18n]');
 
-    // Update all elements with data-i18n attribute
-    document.querySelectorAll('[data-i18n]').forEach(element => {
+    elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
     });
 
-    // Update select options
-    updateSelectOptions();
-
-    // Update language selector
-    const languageSelect = document.getElementById('languageSelect');
-    if (languageSelect) {
-        languageSelect.value = lang;
-    }
+    // Save language preference
+    localStorage.setItem('selectedLanguage', lang);
 }
 
-// Update select options
-function updateSelectOptions() {
-    const selects = document.querySelectorAll('.plan select');
-    selects.forEach(select => {
-        const options = select.querySelectorAll('option');
-        options[0].textContent = translations[currentLanguage].contacts0;
-        options[1].textContent = translations[currentLanguage].contacts1;
-        options[2].textContent = translations[currentLanguage].contacts2;
-    });
-}
-
-// Countdown Timer
-const countdown = () => {
-    const daysEl = document.getElementById("days");
-    const hoursEl = document.getElementById("hours");
-    const minutesEl = document.getElementById("minutes");
-    const secondsEl = document.getElementById("seconds");
-
-    // Only run countdown if all elements exist
-    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
-        return;
-    }
-
-    const endDate = new Date("June 10, 2025 23:59:59").getTime();
-    const now = new Date().getTime();
-    const diff = endDate - now;
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    daysEl.innerText = days;
-    hoursEl.innerText = hours;
-    minutesEl.innerText = minutes;
-    secondsEl.innerText = seconds;
-};
-
-// WayForPay Integration
-function pay(description, amountInCents) {
-    const wayforpay = new Wayforpay();
-    wayforpay.run({
-        merchantAccount: "annasapota_com",
-        merchantDomainName: "annasapota.com",
-        authorisationType: "SimpleSignature",
-        orderReference: "BFM-" + Math.floor(Math.random() * 100000),
-        orderDate: Math.floor(Date.now() / 1000),
-        amount: amountInCents / 100,
-        currency: "EUR",
-        productName: [description],
-        productPrice: [amountInCents / 100],
-        productCount: [1],
-        clientFirstName: "",
-        clientLastName: "",
-        clientEmail: "",
-        clientPhone: "",
-        language: "EN"
-    });
-}
-
-// Initialize everything when page loads
+// Initialize language on page load
 document.addEventListener('DOMContentLoaded', function() {
-    initI18n();
-    
-    // Only run countdown on pages that have countdown elements
-    if (document.getElementById("days")) {
-        setInterval(countdown, 1000);
-        countdown(); // Run immediately
-    }
+    // Check for saved language preference, default to Ukrainian
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'uk';
+    document.getElementById('languageSelect').value = savedLanguage;
+    changeLanguage(savedLanguage);
+
+    // Initialize countdown
+    initCountdown();
 });
+
+// Countdown functionality
+function initCountdown() {
+    const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
+
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+
+        if (daysEl) daysEl.innerHTML = days.toString().padStart(2, '0');
+        if (hoursEl) hoursEl.innerHTML = hours.toString().padStart(2, '0');
+        if (minutesEl) minutesEl.innerHTML = minutes.toString().padStart(2, '0');
+        if (secondsEl) secondsEl.innerHTML = seconds.toString().padStart(2, '0');
+
+        if (distance < 0) {
+            clearInterval(timer);
+            const countdownEl = document.getElementById("countdown");
+            if (countdownEl) countdownEl.innerHTML = "EXPIRED";
+        }
+    }, 1000);
+}
+
+// Payment function
+function pay(planName, amount) {
+    // WayForPay integration
+    const wayforpay = new Wayforpay();
+    const payFunc = function () {
+        wayforpay.run({
+            merchantAccount: "annasapota_com",
+            merchantDomainName: window.location.hostname,
+            authorizationType: "SimpleSignature",
+            merchantSignature: "generated_signature_here",
+            orderReference: Date.now().toString(),
+            orderDate: Math.floor(Date.now() / 1000),
+            amount: amount / 100,
+            currency: "EUR",
+            productName: [planName],
+            productPrice: [amount / 100],
+            productCount: [1],
+            clientFirstName: "Client",
+            clientLastName: "Name",
+            clientEmail: "client@example.com",
+            clientPhone: "380000000000",
+            language: currentLanguage.toUpperCase()
+        }, 
+        function (response) {
+            // Success callback
+            console.log('Payment successful:', response);
+        },
+        function (response) {
+            // Failure callback  
+            console.log('Payment failed:', response);
+        });
+    };
+    payFunc();
+}
