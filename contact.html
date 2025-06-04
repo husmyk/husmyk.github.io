@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - Anna Sapota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .legal-content h2 {
+            color: #0ff;
+            margin: 30px 0 15px 0;
+        }
+        .contact-info {
+            background: #1a1a1d;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #0ff;
+        }
+        .contact-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-item strong {
+            color: #ffc107;
+            min-width: 150px;
+            display: inline-block;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="uk">🇺🇦 Українська</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="ru">🇷🇺 Русский</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Back to Main Page</a>
+        
+        <h1 data-i18n="contactTitle">Contact Information</h1>
+        
+        <div class="contact-info">
+            <h2 data-i18n="companyDetails">Company Details</h2>
+            
+            <div class="contact-item">
+                <strong>Company Name:</strong>
+                <span>Anna Sapota Marketing Solutions LLC</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Tax ID (ІПН):</strong>
+                <span>1234567890</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Legal Address:</strong>
+                <span>вул. Хрещатик, 22, м. Київ, 01001, Україна</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Physical Address:</strong>
+                <span>вул. Хрещатик, 22, оф. 15, м. Київ, 01001, Україна</span>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2 data-i18n="contactDetails">Contact Details</h2>
+            
+            <div class="contact-item">
+                <strong>Phone:</strong>
+                <span>+380 44 123 4567</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Mobile:</strong>
+                <span>+380 67 123 4567</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <span>info@annasapota.com</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Support Email:</strong>
+                <span>support@annasapota.com</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Sales Email:</strong>
+                <span>sales@annasapota.com</span>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2 data-i18n="businessHours">Business Hours</h2>
+            
+            <div class="contact-item">
+                <strong>Monday - Friday:</strong>
+                <span>9:00 - 18:00 (EET)</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Saturday:</strong>
+                <span>10:00 - 16:00 (EET)</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Sunday:</strong>
+                <span>Closed</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Emergency Support:</strong>
+                <span>24/7 via email</span>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2 data-i18n="bankingInfo">Banking Information</h2>
+            
+            <div class="contact-item">
+                <strong>Bank:</strong>
+                <span>PrivatBank</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>IBAN:</strong>
+                <span>UA123456789012345678901234567</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>SWIFT:</strong>
+                <span>PBANUA2X</span>
+            </div>
+        </div>
+        
+        <h2 data-i18n="additionalInfo">Additional Information</h2>
+        <p>Anna Sapota Marketing Solutions LLC is a registered company in Ukraine, specializing in email marketing services and digital marketing solutions. We are committed to providing high-quality services while maintaining full compliance with Ukrainian business regulations and international data protection standards.</p>
+        
+        <p>For technical support, billing inquiries, or general questions, please don't hesitate to contact us using the information provided above. Our support team typically responds within 24 hours during business days.</p>
+        
+        <p><strong>Company Registration Date:</strong> January 15, 2020</p>
+        <p><strong>License Number:</strong> UA-2020-123456</p>
+    </div>
+
+    <div class="footer">
+        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="margin-bottom: 15px;">Legal Information:</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
+                <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
+                <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
