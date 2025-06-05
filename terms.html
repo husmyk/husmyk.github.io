@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - Anna Sapota</title>
+    <title>Умови та Положення - Anna Sapota</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -35,13 +35,68 @@
         }
     </style>
 </head>
+
+<body>
+    <header>
+        <img src="" alt="Anna Sapota logo">
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="uk">🇺🇦 Українська</option>
+                <option value="ru">🇷🇺 Русский</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Повернутися на Головну Сторінку</a>
+        
+        <h1 data-i18n="termsTitle">Умови та Положення</h1>
+        
+        <h2>1. <span data-i18n="serviceDesc">Опис Послуги</span></h2>
+        <p>Анна Сапота надає освітні послуги у вигляді онлайн-курсів, консультацій та підписок для розвитку особистого бренду та просування в соціальних мережах.</p>
+        
+        <h2>2. <span data-i18n="paymentTerms">Умови Оплати</span></h2>
+        <h3>Можливі способи оплати:</h3>
+        <ul>
+            <li>Банківські картки (Visa, MasterCard)</li>
+            <li>Інші способи через WayForPay</li>
+        </ul>
+        
+        <h3>Доставка:</h3>
+        <ul>
+            <li>Для онлайн-курсів та підписок — надання доступу до матеріалів на email або у приватні чати після підтвердження платежу.</li>
+        </ul>
+        
+        <h2>3. <span data-i18n="serviceDelivery">Надання Послуги</span></h2>
+        <p>Доступ до матеріалів надається протягом 24 годин після підтвердження оплати. Тривалість доступу залежить від обраного тарифу.</p>
+        
+        <h2>4. <span data-i18n="userResponsibilities">Обов'язки Користувача</span></h2>
+        <ul>
+            <li>Не передавати доступи третім особам</li>
+            <li>Не копіювати та не розповсюджувати матеріали</li>
+            <li>Дотримуватися правил етикету в чатах</li>
+        </ul>
+        
+        <h2>5. <span data-i18n="limitationLiability">Обмеження Відповідальності</span></h2>
+        <p>Послуги надаються "як є". Результати навчання залежать від індивідуальних зусиль користувача.</p>
+        
+        <h2>6. <span data-i18n="governingLaw">Застосовне Право</span></h2>
+        <p>Дані умови регулюються законодавством України.</p>
+        
+        <p><strong>Останнє оновлення:</strong> Листопад 2024</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 <body>
     <header>
         <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
         <div class="language-selector">
             <select id="languageSelect" onchange="changeLanguage(this.value)">
                 <option value="uk">🇺🇦 Українська</option>
-                <option value="ru">Русский</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="ru">🇷🇺 Русский</option>
             </select>
         </div>
     </header>
