@@ -140,7 +140,7 @@ const translations = {
 };
 
 // Set default language to Ukrainian
-let currentLanguage = 'uk';
+let currentLanguage = 'ru';
 
 // Function to translate the page
 function changeLanguage(lang) {
@@ -161,7 +161,7 @@ function changeLanguage(lang) {
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', function() {
     // Check for saved language preference, default to Ukrainian
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'uk';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
     document.getElementById('languageSelect').value = savedLanguage;
     changeLanguage(savedLanguage);
 

@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контактна Інформація - Anna Sapota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .legal-content {
@@ -32,64 +32,6 @@
         .back-link:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-
-<body>
-    <header>
-        <img src="" alt="Anna Sapota logo">
-        <div class="language-selector">
-            <select id="languageSelect" onchange="changeLanguage(this.value)">
-                <option value="uk">🇺🇦 Українська</option>
-                <option value="ru">🇷🇺 Русский</option>
-            </select>
-        </div>
-    </header>
-
-    <div class="legal-content">
-        <a href="index.html" class="back-link" data-i18n="backToMain">← Повернутися на Головну Сторінку</a>
-        
-        <h1 data-i18n="contactTitle">Контактна Інформація</h1>
-        
-        <h2>1. <span data-i18n="companyDetails">Деталі Компанії</span></h2>
-        <p><strong data-i18n="fopInfo">ФОП Сапота А.В.</strong></p>
-        <p>ІПН: 3480009243</p>
-        
-        <h2>2. <span data-i18n="contactDetails">Контактні Деталі</span></h2>
-        <p><strong>Email:</strong> <a href="mailto:sapota.art@gmail.com">sapota.art@gmail.com</a></p>
-        <p><strong>Телефон:</strong> +38-050-95-65-199</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/anna.sapota/">@anna.sapota</a></p>
-        
-        <h2>3. <span data-i18n="businessHours">Робочі Години</span></h2>
-        <p>Понеділок - П'ятниця: 9:00 - 18:00 (EET)</p>
-        <p>Субота - Неділя: За домовленістю</p>
-        
-        <h2>4. <span data-i18n="bankingInfo">Банківська Інформація</span></h2>
-        <p>Платежі приймаються через WayForPay</p>
-        <p>Підтримувані картки: Visa, MasterCard</p>
-        
-        <h2>5. <span data-i18n="additionalInfo">Додаткова Інформація</span></h2>
-        <p>Для швидкого зв'язку рекомендуємо писати в Instagram Direct або на email.</p>
-        <p>Час відповіді: до 24 годин у робочі дні.</p>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .legal-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: left;
-            line-height: 1.6;
-        }
-        .legal-content h2 {
-            color: #0ff;
-            margin: 30px 0 15px 0;
-        }
         .contact-info {
             background: #1a1a1d;
             padding: 25px;
@@ -107,81 +49,83 @@
             min-width: 150px;
             display: inline-block;
         }
-        .back-link {
-            display: inline-block;
-            margin: 20px 0;
-            color: #0ff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+        <img src="" alt="Anna Sapota logo">
         <div class="language-selector">
             <select id="languageSelect" onchange="changeLanguage(this.value)">
                 <option value="uk">🇺🇦 Українська</option>
-                <option value="en">🇺🇸 English</option>
                 <option value="ru">🇷🇺 Русский</option>
             </select>
         </div>
     </header>
 
     <div class="legal-content">
-        <a href="index.html" class="back-link" data-i18n="backToMain">← Back to Main Page</a>
-        
-        <h1 data-i18n="contactTitle">Контактна інформація</h1>
-        
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Повернутися на Головну Сторінку</a>
+
+        <h1 data-i18n="contactTitle">Контактна Інформація</h1>
+
         <div class="contact-info">
-            <h2 data-i18n="companyDetails">Дані про компанію:</h2>
-            
+            <h2>1. <span data-i18n="companyDetails">Деталі Компанії</span></h2>
+
             <div class="contact-item">
                 <strong>Найменування:</strong>
-                <span>ФОП Сапота А.В.</span>
+                <span data-i18n="fopInfo">ФОП Сапота А.В.</span>
             </div>
-            
+
             <div class="contact-item">
                 <strong>ІПН:</strong>
                 <span>3480009243</span>
             </div>
-            
+
             <div class="contact-item">
-                <strong>Legal Address:</strong>
-                <span>вул. Хрещатик, 22, м. Київ, 01001, Україна</span>
-            </div>
-            
-            <div class="contact-item">
-                <strong>Фізична адреса:</strong>
+                <strong>Юридична адреса:</strong>
                 <span>УКРАЇНА ХАРКІВСЬКА ОБЛАСТЬ ІЗЮМСЬКИЙ РАЙОН С-ЩЕ АНДРІЇВКА ВУЛ. МОЛОЧНА БУД. 65</span>
             </div>
         </div>
-        
+
         <div class="contact-info">
-            <h2 data-i18n="contactDetails">Контакти</h2>
-            
-            <div class="contact-item">
-                <strong>Телефон:</strong>
-                <span>+38 067 399 81 72</span>
-            </div>
-            
+            <h2>2. <span data-i18n="contactDetails">Контактні Деталі</span></h2>
+
             <div class="contact-item">
                 <strong>Email:</strong>
-                <span>annasapota.art@gmail.com</span>
+                <span><a href="mailto:sapota.art@gmail.com">sapota.art@gmail.com</a></span>
             </div>
-            
+
+            <div class="contact-item">
+                <strong>Телефон:</strong>
+                <span>+38-050-95-65-199</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Instagram:</strong>
+                <span><a href="https://www.instagram.com/anna.sapota/">@anna.sapota</a></span>
+            </div>
         </div>
+
+        <h2>3. <span data-i18n="businessHours">Робочі Години</span></h2>
+        <p>Понеділок - П'ятниця: 9:00 - 18:00 (EET)</p>
+        <p>Субота - Неділя: За домовленістю</p>
+
+        <h2>4. <span data-i18n="bankingInfo">Банківська Інформація</span></h2>
+        <p>Платежі приймаються через WayForPay</p>
+        <p>Підтримувані картки: Visa, MasterCard</p>
+
+        <h2>5. <span data-i18n="additionalInfo">Додаткова Інформація</span></h2>
+        <p>Для швидкого зв'язку рекомендуємо писати в Instagram Direct або на email.</p>
+        <p>Час відповіді: до 24 годин у робочі дні.</p>
+    </div>
 
     <div class="footer">
         <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
-            <p style="margin-bottom: 15px;">Legal Information:</p>
+            <p style="margin-bottom: 15px;" data-i18n="legalInfo">Юридична інформація:</p>
             <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
-                <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
-                <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
+                <a href="terms.html" style="color: #0ff; text-decoration: none;" data-i18n="terms">Умови оказання послуг</a>
+                <a href="refund.html" style="color: #0ff; text-decoration: none;" data-i18n="refund">Відмова від відповідальності</a>
+                <a href="contact.html" style="color: #0ff; text-decoration: none;" data-i18n="contact">Гарантія повернення</a>
             </div>
         </div>
     </div>
