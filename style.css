@@ -482,11 +482,13 @@ html, body {
     .hero h1 {
         font-size: 2rem;
         max-width: 100%;
+        display: none;
     }
 
     .hero p {
         max-width: 100%;
         font-size: 1rem;
+        display: none;
     }
 
     .countdown {
