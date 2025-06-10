@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Sapota</title>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <img  alt="Anna Sapota ">
+      <div class="language-selector">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="uk">Українська</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 data-i18n="title">Anna Sapota</h1>
+      <p data-i18n="subtitle">ПРОДВИЖЕНИЕ БЛОГА И ЛИЧНОГО БРЕНДА НА УРОВНЕ, ГДЕ ПРОДАЮТ СИЛОЙ СМЫСЛОВ.<br>Работаем глубоко. Строим доверие. Увеличиваем доход.<br>Уникальный подход от эксперта с 10-летним опытом в маркетинге и рекламе</p>
+    </section>
+
+    <section class="countdown" id="countdown">
+      <div>
+        <span id="days">00</span>
+        <label data-i18n="days">Дні</label>
+      </div>
+      <div>
+        <span id="hours">00</span>
+        <label data-i18n="hours">Години</label>
+      </div>
+      <div>
+        <span id="minutes">00</span>
+        <label data-i18n="minutes">Хвилини</label>
+      </div>
+      <div>
+        <span id="seconds">00</span>
+        <label data-i18n="seconds">Секунди</label>
+      </div>
+    </section>
+
+    <section class="plans">
+      <div class="plan">
+        <div class="plan-content">
+          <h3 data-i18n="monthly">Честный Блог | Система роста</h3>
+          <p><span data-i18n="monthlyDesc">Честный Блог | Система роста<br>Хочешь расти в соцсетях не "по рилсам", а по системе, которая реально приводит клиентов?<br>Подписка для тех, кто строит личный бренд и хочет стабильных результатов: охваты, вовлечённость, доверие, продажи.<br>Что вы получите:<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Модуль "Строим личный бренд с нуля"<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Контент-план на месяц<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2 прямых эфира в месяц: тренды + разборы ситуаций<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Алгоритмы и стратегии роста в Instagram<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Закрытый чат с поддержкой<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Ежемесячные фокусы для прокачки личного бренда</span></p>
+        </div>
+        <div class="plan-cta">
+          <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script> 
+          <script type="text/javascript">function runWfpWdgt(url){var wayforpay=new Wayforpay();wayforpay.invoice(url);}</script> 
+          <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/b6ddc5e316b6e');" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> 
+            <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Оплатить Сейчас</span>
+          </button>
+          <div class="price">€12</div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-content">
+          <h3 data-i18n="biannual">Курс "Личный бренд. Система. Трафик. Деньги."</h3>
+          <p><span data-i18n="biannualDesc">Честный Блог | Система роста<br>Хочешь расти в соцсетях не "по рилсам", а по системе, которая реально приводит клиентов?<br>Подписка для тех, кто строит личный бренд и хочет стабильных результатов: охваты, вовлечённость, доверие, продажи.<br>Что вы получите:<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Модуль "Строим личный бренд с нуля"<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Контент-план на месяц<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2 прямых эфира в месяц: тренды + разборы ситуаций<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Алгоритмы и стратегии роста в Instagram<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Закрытый чат с поддержкой<br><svg width="16" height="16" viewBox="0 0 24 24" fill="#0ff" style="display: inline; margin-right: 8px; vertical-align: middle;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Ежемесячные фокусы для прокачки личного бренда</span></p>
+        </div>
+        <div class="plan-cta">
+          <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script> 
+          <script type="text/javascript">function runWfpWdgt(url){var wayforpay=new Wayforpay();wayforpay.invoice(url);}</script> 
+          <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/bacf2df37a086');" style="display:inline-block!important;background:#0488cd;background-size:cover;width: 256px!important;height:54px!important;border:none!important;border-radius:14px!important;padding:18px!important;box-shadow:3px 2px 8px rgba(71,66,66,0.22)!important;text-align:center!important;outline:none!important;" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1;"> 
+            <span style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Оплатить Сейчас</span>
+          </button>
+          <div class="price">€100</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <h2 data-i18n="socialNetworks">МОЇ СОЦІАЛЬНІ МЕРЕЖІ</h2>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/anna.sapota/" class="social-link">
+          <span data-i18n="instagram">INSTAGRAM</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="social-link">
+          <span data-i18n="telegram">TELEGRAM-КАНАЛ</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="social-link">
+          <span data-i18n="tiktok">TIKTOK</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+          </svg>
+        </a>
+
+        <a href="https://youtube.com/@anna.sapota?si=PNLRSlSfgCl3nExL" class="social-link">
+          <span data-i18n="youtube">YOUTUBE</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="mind-map-section">
+        <h3 data-i18n="mindMapTitle">ПЕРЕХОДИ НА MIND MAP ВСІХ МОЇХ ПРОДУКТІВ</h3>
+        <button class="visit-site-btn" data-i18n="visitSite">Перейти на сайт</button>
+      </div>
+
+      <div class="questions-section">
+        <div class="questions-text">
+          <h3 data-i18n="questionsLeft">ЗАЛИШИСЬ ПИТАННЯ?</h3>
+          <p data-i18n="askDirect">ЗАДАЙТЕ ЇХ МЕНІ ОСОБИСТО В DIRECT</p>
+        </div>
+        <a href="https://ig.me/m/anna.sapota">
+        <button class="direct-btn" data-i18n="writeInDirect">Написати в Direct</button>
+        </a>
+      </div>
+    </section>
+
+   <div class="footer">
+    <div class="footer-left">
+      <ul class="footer-links">
+        <li><a href="privacy.html" data-i18n="privacyPolicy">Політика конфіденційності</a></l>
+        <li><a href="terms.html" data-i18n="terms">Политика конфиденциальности и условия оказания услуг</a></li>
+        <li><a href="refund.html" data-i18n="refund">Отказ от ответственности</a></li>
+        <li><a href="contact.html" data-i18n="contact">Контактная информация</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-right">
+      <h3 data-i18n="paymentSystems">Платёжные системы</h3>
+      <div class="payment-systems">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="payment-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+        <svg class="payment-logo" height="40" viewBox="0 0 100 30" fill="none">
+        </svg>
+      </div>
+      
+      <div class="contact-info">
+        <p><strong data-i18n="fopInfo">ФОП Сапота А.В. ІПН</strong> 3480009243</p>
+        <p><a href="mailto:annasapota.art@gmail.com">sapota.art@gmail.com</a></p>
+        <p>+38-050-95-65-199</p>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>  
+  </body>
+
+  </html>

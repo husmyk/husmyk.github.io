@@ -1,2 +1,2 @@
 # husmyk.github.io
-Landing
+landing

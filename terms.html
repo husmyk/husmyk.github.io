@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Anna Sapota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .legal-content h2 {
+            color: #0ff;
+            margin: 30px 0 15px 0;
+        }
+        .legal-content h3 {
+            color: #ffc107;
+            margin: 20px 0 10px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="uk">🇺🇦 Українська</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="ru">🇷🇺 Русский</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Back to Main Page</a>
+        
+        <h1 data-i18n="termsTitle">Правила та умови</h1>
+        
+        <h2>1. <span data-i18n="serviceDesc">Правила та умови використання сайту annasapota.com </span></h2>
+        <p>Цей веб-сайт є платформою для продажу онлайн-продуктів, курсів, підписок та послуг, що надаються індивідуальним підприємцем ФОП Сапота А. В. IПН 3480009243.
+Всі матеріали, розміщені на сайті, є інтелектуальною власністю власника сайту та не підлягають копіюванню або використанню без письмової згоди.
+Оформляючи замовлення на сайті, Ви погоджуєтесь з умовами надання послуг, способами оплати, умовами повернення коштів та політикою конфіденційності.
+Послуги та продукти надаються в електронному вигляді після підтвердження платежу.
+        </p>
+        
+        <h2>2. <span data-i18n="paymentTerms">Способи оплати</span></h2>
+        <h3>Можливі сопособи оплати:</h3>
+        <ul>
+            <li>Банківські картки (Visa, MasterCard)</li>
+            <li>інші способи через WayForPay</li>
+        </ul>
+        
+        <h3>Доставка:</h3>
+        <ul>
+            <li>для онлайн-курсів та підписок — надання доступу до матеріалів на email або у приватні чати після підтвердження платежу.</li>
+        </ul>
+        
+    
+    </div>
+
+    <div class="footer">
+        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="margin-bottom: 15px;">Legal Information:</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
+                <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
+                <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

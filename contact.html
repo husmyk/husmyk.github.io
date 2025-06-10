@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - Anna Sapota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .legal-content h2 {
+            color: #0ff;
+            margin: 30px 0 15px 0;
+        }
+        .contact-info {
+            background: #1a1a1d;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #0ff;
+        }
+        .contact-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-item strong {
+            color: #ffc107;
+            min-width: 150px;
+            display: inline-block;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://moosend.com/wp-content/uploads/2021/07/moosend-logo.svg" alt="Anna Sapota logo">
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="uk">Українська</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <a href="index.html" class="back-link" data-i18n="backToMain">← Back to Main Page</a>
+        
+        <h1 data-i18n="contactTitle">Контактна інформація</h1>
+        
+        <div class="contact-info">
+            <h2 data-i18n="companyDetails">Дані про компанію:</h2>
+            
+            <div class="contact-item">
+                <strong>Найменування:</strong>
+                <span>ФОП Сапота А.В.</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>ІПН:</strong>
+                <span>3480009243</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Legal Address:</strong>
+                <span>УКРАЇНА ХАРКІВСЬКА ОБЛАСТЬ ІЗЮМСЬКИЙ РАЙОН С-ЩЕ АНДРІЇВКА ВУЛ. МОЛОЧНА БУД. 65</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Фізична адреса:</strong>
+                <span>УКРАЇНА ХАРКІВСЬКА ОБЛАСТЬ ІЗЮМСЬКИЙ РАЙОН С-ЩЕ АНДРІЇВКА ВУЛ. МОЛОЧНА БУД. 65</span>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2 data-i18n="contactDetails">Контакти</h2>
+            
+            <div class="contact-item">
+                <strong>Телефон:</strong>
+                <span>+38 067 399 81 72</span>
+            </div>
+            
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <span>sapota.art@gmail.com</span>
+            </div>
+            
+        </div>
+
+    <div class="footer">
+        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="margin-bottom: 15px;">Legal Information:</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="terms.html" style="color: #0ff; text-decoration: none;">Terms & Conditions</a>
+                <a href="refund.html" style="color: #0ff; text-decoration: none;">Refund Policy</a>
+                <a href="contact.html" style="color: #0ff; text-decoration: none;">Contact Information</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
