@@ -193,7 +193,7 @@ const translations = {
 };
 
 // Set default language to Ukrainian
-let currentLanguage = 'uk';
+let currentLanguage = 'ru';
 
 // Function to translate the page
 function changeLanguage(lang) {
