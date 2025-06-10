@@ -90,35 +90,6 @@ html, body {
     color: white;
 }
 
-.hero {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-    min-height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 30px 0;
-    text-align: right;
-}
-
-.hero h1 {
-    font-size: 7rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 20px 0;
-    max-width: 50%;
-}
-
-.hero p {
-    color: #ccc;
-    font-size: 1.2rem;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    max-width: 50%;
-}
-
 .countdown {
     display: flex;
     justify-content: center;
