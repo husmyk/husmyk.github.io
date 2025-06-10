@@ -192,7 +192,7 @@ const translations = {
     }
 };
 
-// Set default language to Ukrainian
+// Set default language to Russian
 let currentLanguage = 'ru';
 
 // Function to translate the page
@@ -214,7 +214,7 @@ function changeLanguage(lang) {
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', function() {
     // Check for saved language preference, default to Ukrainian
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'uk';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
     document.getElementById('languageSelect').value = savedLanguage;
     changeLanguage(savedLanguage);
 
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Countdown functionality
 function initCountdown() {
-    const countdownDate = new Date().getTime() + (1 * 24 * 60 * 60 * 1000); // 7 days from now
+    const countdownDate = new Date().getTime() + (1 * 1 * 1 * 60 * 1000); // 7 days from now
 
     const timer = setInterval(function() {
         const now = new Date().getTime();
