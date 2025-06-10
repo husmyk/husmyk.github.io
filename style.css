@@ -505,17 +505,38 @@ html, body {
         background-position: center;
         align-items: center;
         text-align: center;
-        padding: 20px 0;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-        max-width: 100%;
-        display: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
     .hero p {
         font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+        max-width: 100%;
+        color: #ccc;
+        order: 1;
+        margin: 0;
+    }
+
+    .hero-img-circle {
+        order: 2;
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 0 10px;
+        max-width: 100%;
+        order: 3;
+        display: block;
+        margin: 0;
     }
 
     .countdown {
