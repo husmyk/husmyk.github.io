@@ -293,6 +293,8 @@ html, body {
     text-transform: uppercase;
 }
 
+.yellow-text: {color: yellow};
+
 .visit-site-btn:hover {
     background: #00cccc;
     transform: translateY(-2px);
