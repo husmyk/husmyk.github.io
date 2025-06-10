@@ -16,7 +16,6 @@ body {
 
 header {
     padding: 20px 0;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -496,6 +495,7 @@ html, body {
 
     .hero p {
         font-size: 1rem;
+            text-align: center;
         line-height: 1.5;
         padding: 0 10px;
         max-width: 100%;
