@@ -24,6 +24,9 @@ header {
 header img {
     max-height: 50px;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .language-selector select {
     background: #1a1a1d;
