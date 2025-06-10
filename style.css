@@ -360,6 +360,8 @@ html, body {
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
+    border-top: 1px solid #333;
+    background: #0f0f11;
 }
 
 .footer-left {
@@ -495,7 +497,6 @@ html, body {
 
     .hero p {
         font-size: 1rem;
-            text-align: center;
         line-height: 1.5;
         padding: 0 10px;
         max-width: 100%;
