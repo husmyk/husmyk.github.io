@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Countdown functionality
 function initCountdown() {
-    const countdownDate = new Date().getTime() + (1 * 1 * 1 * 60 * 1000); // 7 days from now
+    const countdownDate = new Date().getTime() + (1 * 1 * 15 * 60 * 1000); // 7 days from now
 
     const timer = setInterval(function() {
         const now = new Date().getTime();
