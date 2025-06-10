@@ -50,7 +50,6 @@ html, body {
 }
 
 .hero {
-    background-image: url('/assets/IMG_20250603_180501_414.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
